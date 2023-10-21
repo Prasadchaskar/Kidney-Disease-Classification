@@ -1,1 +1,33 @@
 [2023-10-19 11:01:22,335: INFO: main: Logging setup done..]
+[2023-10-21 08:03:24,062: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 08:03:24,081: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 08:03:24,092: INFO: common: created directory at: artifacts]
+[2023-10-21 08:03:24,095: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-21 08:03:24,097: INFO: 1874214534: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-21 08:07:21,004: INFO: 1874214534: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-21 08:52:20,451: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-21 08:52:20,462: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 08:52:20,483: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 08:52:20,484: INFO: common: created directory at: artifacts]
+[2023-10-21 08:52:20,484: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-21 08:52:20,485: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File ".\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "e:\dlproject\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "e:\dlproject\kidney-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 30, in download_file
+    raise e
+  File "e:\dlproject\kidney-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 20, in download_file
+    os.makedirs("artifacts/data_ingestion", exist_ok=True)
+NameError: name 'os' is not defined
+[2023-10-21 08:52:47,896: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-21 08:52:47,897: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 08:52:47,898: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 08:52:47,898: INFO: common: created directory at: artifacts]
+[2023-10-21 08:52:47,899: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-21 08:52:47,899: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-21 08:53:32,727: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-21 08:53:33,363: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
